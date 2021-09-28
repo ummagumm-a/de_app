@@ -25,18 +25,3 @@ NumericalMethod::NumericalMethod(
     transform(xs.begin(), xs.end(), back_inserter(exact), f);  
 }
 
-void NumericalMethod::test() const
-{
-    cout << "xs: " << endl;
-    for (const auto& tmp : xs)
-        cout << tmp << " ";
-    cout << endl;
-    cout << "end xs" << endl;
-
-    cout << "exact: " << endl;
-    for (const auto& tmp : exact)
-        cout << tmp << " ";
-    cout << endl;
-    cout << "end exact" << endl;
-}
-

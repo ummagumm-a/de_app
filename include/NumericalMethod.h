@@ -11,8 +11,6 @@ public:
             std::function<double(double)> f,
             double x0, double y0,
             double step_size, double n_intervals);
-
-    void test() const;
 protected:
     std::function<double(double, double)> f_dir;
     std::function<double(double)> f;

@@ -1,10 +1,10 @@
 #include <iostream>
 #include <algorithm>
 
-#include "include/NumericalMethod.h"
+#include "include/DiffEqSolver.h"
 using namespace std;
 
-NumericalMethod::NumericalMethod(
+DiffEqSolver::DiffEqSolver(
         std::function<double(double, double)> f_dir,
         std::function<double(double)> f,
         double x0, double y0,

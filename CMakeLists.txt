@@ -9,5 +9,5 @@ add_definitions('-Wall')
 
 include_directories(include)
 
-add_executable(${PROJECT_NAME} main.cpp NumericalMethod.cpp)
+add_executable(${PROJECT_NAME} main.cpp DiffEqSolver.cpp)
 

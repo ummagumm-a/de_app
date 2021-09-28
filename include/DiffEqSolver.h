@@ -1,12 +1,12 @@
-#ifndef NUMERICALMETHOD_H
-#define NUMERICALMETHOD_H
+#ifndef DIFF_EQ_SOLVER_H
+#define DIFF_EQ_SOLVER_H
 
 #include <functional>
 
-class NumericalMethod
+class DiffEqSolver
 {
 public:
-    NumericalMethod(
+    DiffEqSolver(
             std::function<double(double, double)> f_dir,
             std::function<double(double)> f,
             double x0, double y0,
@@ -25,4 +25,4 @@ protected:
     std::vector<double> gte;
 };
 
-#endif /* !NUMERICALMETHOD_H */
+#endif /* !DIFF_EQ_SOLVER_H */

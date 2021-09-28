@@ -15,9 +15,13 @@ public:
             double x0, double y0,
             double step_size, double n_intervals);
 
-    void setNumericalMethod(std::unique_ptr<NumericalMethod>&& nm);
+    void setNumericalMethod(std::unique_ptr<NumericalMethod> nm);
 
     void applyMethod();
+
+    void calc_lte();
+
+    void calc_gte();
 
     void test() const;
 private:

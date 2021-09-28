@@ -20,6 +20,8 @@ int main()
     des.setNumericalMethod(move(nm));
 
     des.applyMethod();
+    des.calc_lte();
+    des.calc_gte();
     des.test();
 
 
@@ -28,6 +30,8 @@ int main()
     des.setNumericalMethod(move(nm1));
 
     des.applyMethod();
+    des.calc_lte();
+    des.calc_gte();
     des.test();
 
 
@@ -36,6 +40,8 @@ int main()
     des.setNumericalMethod(move(nm2));
 
     des.applyMethod();
+    des.calc_lte();
+    des.calc_gte();
     des.test();
 
 
